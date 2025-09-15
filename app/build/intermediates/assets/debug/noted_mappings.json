@@ -12,11 +12,11 @@
             "KEYCODE_O": { "type": "KEYCODE", "key": "KEYCODE_L" },      
             "KEYCODE_P": { "type": "KEYCODE", "key": "KEYCODE_F" },      
 
-            
+
             "KEYCODE_LEFT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_J" },     
             "KEYCODE_RIGHT_BRACKET": { "type": "TEXT",    "text": "ß" },            
 
-            
+
             "KEYCODE_A": { "type": "KEYCODE", "key": "KEYCODE_C" },      
             "KEYCODE_S": { "type": "KEYCODE", "key": "KEYCODE_S" },      
             "KEYCODE_D": { "type": "KEYCODE", "key": "KEYCODE_I" },      
@@ -28,13 +28,13 @@
             "KEYCODE_L": { "type": "KEYCODE", "key": "KEYCODE_R" },      
             "KEYCODE_SEMICOLON": { "type": "KEYCODE", "key": "KEYCODE_H" }, 
 
-            
+
             "KEYCODE_APOSTROPHE": { "type": "KEYCODE", "key": "KEYCODE_APOSTROPHE" },
 
-            
+
             "KEYCODE_BACKSLASH": { "type": "TEXT", "text": "´" },
 
-            
+
             "KEYCODE_Z": { "type": "KEYCODE", "key": "KEYCODE_V" },      
             "KEYCODE_X": { "type": "KEYCODE", "key": "KEYCODE_X" },      
             "KEYCODE_C": { "type": "TEXT",    "text": "ü" },             
@@ -43,14 +43,14 @@
             "KEYCODE_N": { "type": "KEYCODE", "key": "KEYCODE_W" },      
             "KEYCODE_M": { "type": "KEYCODE", "key": "KEYCODE_G" },      
 
-            
+
             "KEYCODE_COMMA":  { "type": "KEYCODE", "key": "KEYCODE_COMMA" },  
             "KEYCODE_PERIOD": { "type": "KEYCODE", "key": "KEYCODE_PERIOD" }, 
 
-            
+
             "KEYCODE_SLASH": { "type": "KEYCODE", "key": "KEYCODE_K" },   
 
-            
+
             "KEYCODE_SPACE":  { "type": "KEYCODE", "key": "KEYCODE_SPACE" },
             "KEYCODE_TAB":    { "type": "KEYCODE", "key": "KEYCODE_TAB" },
             "KEYCODE_ENTER":  { "type": "KEYCODE", "key": "KEYCODE_ENTER" },
@@ -59,7 +59,7 @@
         },
 
         "M2": {
-            
+
             "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_Z", "modifiers": ["SHIFT"] },
             "KEYCODE_W": { "type": "KEYCODE", "key": "KEYCODE_Y", "modifiers": ["SHIFT"] },
             "KEYCODE_E": { "type": "KEYCODE", "key": "KEYCODE_U", "modifiers": ["SHIFT"] },
@@ -126,7 +126,7 @@
             "KEYCODE_LEFT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_AT" },                                            
             "KEYCODE_RIGHT_BRACKET": { "type": "TEXT",    "text": "ſ" },                                                    
 
-            
+
             "KEYCODE_A": { "type": "KEYCODE",  "key": "KEYCODE_BACKSLASH" },                                                
             "KEYCODE_S": { "type": "KEYCODE",  "key": "KEYCODE_SLASH" },                                                    
             "KEYCODE_D": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_LEFT_BRACKET",  "modifiers": ["SHIFT"] } ] },   
@@ -139,7 +139,7 @@
             "KEYCODE_SEMICOLON": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_SEMICOLON", "modifiers": ["SHIFT"] } ] }, 
             "KEYCODE_BACKSLASH": { "type": "TEXT", "text": "̵" },                                                           
 
-            
+
             "KEYCODE_Z": { "type": "KEYCODE",  "key": "KEYCODE_POUND" },                                                    
             "KEYCODE_X": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_4", "modifiers": ["SHIFT"] } ] },               
             "KEYCODE_C": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_BACKSLASH", "modifiers": ["SHIFT"] } ] },       
@@ -150,50 +150,164 @@
             "KEYCODE_COMMA":  { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_APOSTROPHE", "modifiers": ["SHIFT"] } ] }, 
             "KEYCODE_PERIOD": { "type": "KEYCODE",  "key": "KEYCODE_APOSTROPHE" },                                          
             "KEYCODE_SLASH":  { "type": "KEYCODE",  "key": "KEYCODE_SEMICOLON" }                                            
-    },
+        },
 
-    "M4": {
-        "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_PAGE_UP" },
-        "KEYCODE_W": { "type": "KEYCODE", "key": "KEYCODE_DEL" },                
-        "KEYCODE_E": { "type": "KEYCODE", "key": "KEYCODE_DPAD_UP" },
-        "KEYCODE_R": { "type": "KEYCODE", "key": "KEYCODE_FORWARD_DEL" },        
-        "KEYCODE_T": { "type": "KEYCODE", "key": "KEYCODE_PAGE_DOWN" },
-        "KEYCODE_Y": { "type": "TEXT",    "text": "¡" },                         
+        "M4": {
 
-        "KEYCODE_U": { "type": "KEYCODE", "key": "KEYCODE_7" },
-        "KEYCODE_I": { "type": "KEYCODE", "key": "KEYCODE_8" },
-        "KEYCODE_O": { "type": "KEYCODE", "key": "KEYCODE_9" },
 
-        "KEYCODE_P":              { "type": "KEYCODE", "key": "KEYCODE_NUMPAD_ADD" },       
-        "KEYCODE_LEFT_BRACKET":   { "type": "KEYCODE", "key": "KEYCODE_NUMPAD_SUBTRACT" },  
-        "KEYCODE_RIGHT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_SEMICOLON" },        
+            "KEYCODE_GRAVE": { "type": "TEXT", "text": "˙" },
+            "KEYCODE_1":     { "type": "TEXT", "text": "ª" },
+            "KEYCODE_2":     { "type": "TEXT", "text": "º" },
+            "KEYCODE_3":     { "type": "TEXT", "text": "№" },
+            "KEYCODE_4":     { "type": "TEXT", "text": "" },
+            "KEYCODE_5":     { "type": "TEXT", "text": "·" },
+            "KEYCODE_6":     { "type": "TEXT", "text": "£" },
+            "KEYCODE_7":     { "type": "TEXT", "text": "¤" },
+            "KEYCODE_8":     { "type": "KEYCODE", "key": "KEYCODE_TAB" },
+            "KEYCODE_9":     { "type": "KEYCODE", "key": "KEYCODE_SLASH" },
+            "KEYCODE_0":     { "type": "KEYCODE", "key": "KEYCODE_NUMPAD_MULTIPLY" },
+            "KEYCODE_MINUS": { "type": "KEYCODE", "key": "KEYCODE_MINUS" },
+            "KEYCODE_EQUALS":{ "type": "TEXT", "text": "¨" },
 
-        
-        "KEYCODE_A": { "type": "KEYCODE", "key": "KEYCODE_MOVE_HOME" },           
-        "KEYCODE_S": { "type": "KEYCODE", "key": "KEYCODE_DPAD_LEFT" },
-        "KEYCODE_D": { "type": "KEYCODE", "key": "KEYCODE_DPAD_DOWN" },
-        "KEYCODE_F": { "type": "KEYCODE", "key": "KEYCODE_DPAD_RIGHT" },
-        "KEYCODE_G": { "type": "KEYCODE", "key": "KEYCODE_MOVE_END" },            
-        "KEYCODE_H": { "type": "TEXT",    "text": "¿" },                          
+            "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_PAGE_UP" },
+            "KEYCODE_W": { "type": "KEYCODE", "key": "KEYCODE_DEL" },                
+            "KEYCODE_E": { "type": "KEYCODE", "key": "KEYCODE_DPAD_UP" },
+            "KEYCODE_R": { "type": "KEYCODE", "key": "KEYCODE_FORWARD_DEL" },        
+            "KEYCODE_T": { "type": "KEYCODE", "key": "KEYCODE_PAGE_DOWN" },
+            "KEYCODE_Y": { "type": "TEXT",    "text": "¡" },                         
 
-        "KEYCODE_J": { "type": "KEYCODE", "key": "KEYCODE_4" },
-        "KEYCODE_K": { "type": "KEYCODE", "key": "KEYCODE_5" },
-        "KEYCODE_L": { "type": "KEYCODE", "key": "KEYCODE_6" },
-        "KEYCODE_SEMICOLON": { "type": "KEYCODE", "key": "KEYCODE_PERIOD" },
+            "KEYCODE_U": { "type": "KEYCODE", "key": "KEYCODE_7" },
+            "KEYCODE_I": { "type": "KEYCODE", "key": "KEYCODE_8" },
+            "KEYCODE_O": { "type": "KEYCODE", "key": "KEYCODE_9" },
 
-        
-        "KEYCODE_Z": { "type": "KEYCODE", "key": "KEYCODE_ESCAPE" },
-        "KEYCODE_X": { "type": "KEYCODE", "key": "KEYCODE_TAB" },
-        "KEYCODE_V": { "type": "KEYCODE", "key": "KEYCODE_ENTER" },
-        "KEYCODE_N": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_SEMICOLON", "modifiers": ["SHIFT"] } ] },
+            "KEYCODE_P":              { "type": "KEYCODE", "key": "KEYCODE_NUMPAD_ADD" },       
+            "KEYCODE_LEFT_BRACKET":   { "type": "KEYCODE", "key": "KEYCODE_NUMPAD_SUBTRACT" },  
+            "KEYCODE_RIGHT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_SEMICOLON" },        
 
-        "KEYCODE_M": { "type": "KEYCODE", "key": "KEYCODE_1" },
-        "KEYCODE_COMMA": { "type": "KEYCODE", "key": "KEYCODE_2" },
-        "KEYCODE_PERIOD": { "type": "KEYCODE", "key": "KEYCODE_3" },
-        "KEYCODE_SLASH": { "type": "KEYCODE", "key": "KEYCODE_COMMA" },
-        "KEYCODE_SPACE": { "type": "KEYCODE", "key": "KEYCODE_0" }           
-    },
-    "M5": {},
-    "M6": {}
-}
+
+            "KEYCODE_A": { "type": "KEYCODE", "key": "KEYCODE_MOVE_HOME" },           
+            "KEYCODE_S": { "type": "KEYCODE", "key": "KEYCODE_DPAD_LEFT" },
+            "KEYCODE_D": { "type": "KEYCODE", "key": "KEYCODE_DPAD_DOWN" },
+            "KEYCODE_F": { "type": "KEYCODE", "key": "KEYCODE_DPAD_RIGHT" },
+            "KEYCODE_G": { "type": "KEYCODE", "key": "KEYCODE_MOVE_END" },            
+            "KEYCODE_H": { "type": "TEXT",    "text": "¿" },                          
+
+            "KEYCODE_J": { "type": "KEYCODE", "key": "KEYCODE_4" },
+            "KEYCODE_K": { "type": "KEYCODE", "key": "KEYCODE_5" },
+            "KEYCODE_L": { "type": "KEYCODE", "key": "KEYCODE_6" },
+            "KEYCODE_SEMICOLON": { "type": "KEYCODE", "key": "KEYCODE_PERIOD" },
+
+
+            "KEYCODE_Z": { "type": "KEYCODE", "key": "KEYCODE_ESCAPE" },
+            "KEYCODE_X": { "type": "KEYCODE", "key": "KEYCODE_TAB" },
+            "KEYCODE_V": { "type": "KEYCODE", "key": "KEYCODE_ENTER" },
+            "KEYCODE_N": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_SEMICOLON", "modifiers": ["SHIFT"] } ] },
+
+            "KEYCODE_M": { "type": "KEYCODE", "key": "KEYCODE_1" },
+            "KEYCODE_COMMA": { "type": "KEYCODE", "key": "KEYCODE_2" },
+            "KEYCODE_PERIOD": { "type": "KEYCODE", "key": "KEYCODE_3" },
+            "KEYCODE_SLASH": { "type": "KEYCODE", "key": "KEYCODE_COMMA" },
+            "KEYCODE_SPACE": { "type": "KEYCODE", "key": "KEYCODE_0" }           
+        },
+        "M5": {
+            "KEYCODE_GRAVE": { "type": "TEXT", "text": "˞" },
+            "KEYCODE_1":     { "type": "TEXT", "text": "₁" },
+            "KEYCODE_2":     { "type": "TEXT", "text": "₂" },
+            "KEYCODE_3":     { "type": "TEXT", "text": "₃" },
+            "KEYCODE_4":     { "type": "TEXT", "text": "♀" },
+            "KEYCODE_5":     { "type": "TEXT", "text": "♂" },
+            "KEYCODE_6":     { "type": "TEXT", "text": "⚥" },
+            "KEYCODE_7":     { "type": "TEXT", "text": "ϰ" },
+            "KEYCODE_8":     { "type": "TEXT", "text": "⟨" },
+            "KEYCODE_9":     { "type": "TEXT", "text": "⟩" },
+            "KEYCODE_0":     { "type": "TEXT", "text": "₀" },
+            "KEYCODE_MINUS": { "type": "TEXT", "text": "-" },
+            "KEYCODE_EQUALS":{ "type": "TEXT", "text": "ʽ" },
+
+            "KEYCODE_Q": { "type": "TEXT", "text": "ζ" },
+            "KEYCODE_W": { "type": "TEXT", "text": "υ" },
+            "KEYCODE_R": { "type": "TEXT", "text": "α" },
+            "KEYCODE_T": { "type": "TEXT", "text": "ϕ" },
+            "KEYCODE_Y": { "type": "TEXT", "text": "π" },
+            "KEYCODE_U": { "type": "TEXT", "text": "β" },
+            "KEYCODE_I": { "type": "TEXT", "text": "μ" },
+            "KEYCODE_O": { "type": "TEXT", "text": "λ" },
+            "KEYCODE_P": { "type": "TEXT", "text": "φ" },
+            "KEYCODE_LEFT_BRACKET":  { "type": "TEXT", "text": "θ" },
+            "KEYCODE_RIGHT_BRACKET": { "type": "TEXT", "text": "ς" },
+
+            "KEYCODE_A": { "type": "TEXT", "text": "χ" },
+            "KEYCODE_S": { "type": "TEXT", "text": "σ" },
+            "KEYCODE_D": { "type": "TEXT", "text": "ι" },
+            "KEYCODE_F": { "type": "TEXT", "text": "ε" },
+            "KEYCODE_G": { "type": "TEXT", "text": "ο" },
+            "KEYCODE_H": { "type": "TEXT", "text": "δ" },
+            "KEYCODE_J": { "type": "TEXT", "text": "τ" },
+            "KEYCODE_K": { "type": "TEXT", "text": "ν" },
+            "KEYCODE_L": { "type": "TEXT", "text": "ρ" },
+            "KEYCODE_SEMICOLON": { "type": "TEXT", "text": "ψ" },
+            "KEYCODE_BACKSLASH": { "type": "TEXT", "text": "ʼ" },
+
+            "KEYCODE_X": { "type": "TEXT", "text": "ξ" },
+            "KEYCODE_V": { "type": "TEXT", "text": "η" },
+            "KEYCODE_B": { "type": "TEXT", "text": "ϵ" },
+            "KEYCODE_N": { "type": "TEXT", "text": "ω" },
+            "KEYCODE_M": { "type": "TEXT", "text": "γ" },
+            "KEYCODE_COMMA":  { "type": "TEXT", "text": "ϱ" },
+            "KEYCODE_PERIOD": { "type": "TEXT", "text": "ϑ" },
+            "KEYCODE_SLASH":  { "type": "TEXT", "text": "κ" }
+        },
+
+        "M6": {
+            "KEYCODE_GRAVE": { "type": "TEXT", "text": "̣" },
+            "KEYCODE_1":     { "type": "TEXT", "text": "¬" },
+            "KEYCODE_2":     { "type": "TEXT", "text": "∨" },
+            "KEYCODE_3":     { "type": "TEXT", "text": "∧" },
+            "KEYCODE_4":     { "type": "TEXT", "text": "⊥" },
+            "KEYCODE_5":     { "type": "TEXT", "text": "∡" },
+            "KEYCODE_6":     { "type": "TEXT", "text": "∥" },
+            "KEYCODE_7":     { "type": "TEXT", "text": "→" },
+            "KEYCODE_8":     { "type": "TEXT", "text": "∞" },
+            "KEYCODE_9":     { "type": "TEXT", "text": "∝" },
+            "KEYCODE_0":     { "type": "TEXT", "text": "∅" },
+            "KEYCODE_MINUS": { "type": "TEXT", "text": "­" },
+            "KEYCODE_EQUALS":{ "type": "TEXT", "text": "¯" },
+
+            "KEYCODE_Q": { "type": "TEXT", "text": "ℤ" },
+            "KEYCODE_W": { "type": "TEXT", "text": "ℵ" },
+            "KEYCODE_E": { "type": "TEXT", "text": "×" },
+            "KEYCODE_R": { "type": "TEXT", "text": "∀" },
+            "KEYCODE_T": { "type": "TEXT", "text": "ℚ" },
+            "KEYCODE_Y": { "type": "TEXT", "text": "Π" },
+            "KEYCODE_U": { "type": "TEXT", "text": "∂" },
+            "KEYCODE_I": { "type": "TEXT", "text": "↦" },
+            "KEYCODE_O": { "type": "TEXT", "text": "Λ" },
+            "KEYCODE_P": { "type": "TEXT", "text": "Φ" },
+            "KEYCODE_LEFT_BRACKET":  { "type": "TEXT", "text": "Θ" },
+            "KEYCODE_RIGHT_BRACKET": { "type": "TEXT", "text": "∘" },
+
+            "KEYCODE_A": { "type": "TEXT", "text": "ℂ" },
+            "KEYCODE_S": { "type": "TEXT", "text": "Σ" },
+            "KEYCODE_D": { "type": "TEXT", "text": "∫" },
+            "KEYCODE_F": { "type": "TEXT", "text": "∃" },
+            "KEYCODE_G": { "type": "TEXT", "text": "∈" },
+            "KEYCODE_H": { "type": "TEXT", "text": "Δ" },
+            "KEYCODE_J": { "type": "TEXT", "text": "∇" },
+            "KEYCODE_K": { "type": "TEXT", "text": "ℕ" },
+            "KEYCODE_L": { "type": "TEXT", "text": "ℝ" },
+            "KEYCODE_SEMICOLON": { "type": "TEXT", "text": "Ψ" },
+            "KEYCODE_BACKSLASH": { "type": "TEXT", "text": "˘" },
+
+            "KEYCODE_Z": { "type": "TEXT", "text": "√" },
+            "KEYCODE_X": { "type": "TEXT", "text": "Ξ" },
+            "KEYCODE_C": { "type": "TEXT", "text": "∪" },
+            "KEYCODE_V": { "type": "TEXT", "text": "∩" },
+            "KEYCODE_B": { "type": "TEXT", "text": "⊂" },
+            "KEYCODE_N": { "type": "TEXT", "text": "Ω" },
+            "KEYCODE_M": { "type": "TEXT", "text": "Γ" },
+            "KEYCODE_COMMA":  { "type": "TEXT", "text": "⇐" },
+            "KEYCODE_PERIOD": { "type": "TEXT", "text": "⇔" },
+            "KEYCODE_SLASH":  { "type": "TEXT", "text": "⇒" }
+        }
+    }
 }
