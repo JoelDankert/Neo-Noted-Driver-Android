@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' version '1.9.0'
+}
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    namespace "com.sjdev.noteddriverandroid"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.sjdev.noteddriverandroid"
+        minSdk 21
+        targetSdk 34
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:1.12.0"
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+}
+
+/* Added by you-assistant: enable Kotlin non-local break/continue feature */
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+}

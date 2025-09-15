@@ -1,0 +1,54 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sjdev.noteddriverandroid" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+7        android:targetSdkVersion="34" />
+8
+9    <permission
+9-->[androidx.core:core:1.12.0] /home/joeld/.gradle/caches/transforms-3/426ec55f7d3ce847007a50b675a08475/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+10        android:name="com.sjdev.noteddriverandroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+10-->[androidx.core:core:1.12.0] /home/joeld/.gradle/caches/transforms-3/426ec55f7d3ce847007a50b675a08475/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+11        android:protectionLevel="signature" />
+11-->[androidx.core:core:1.12.0] /home/joeld/.gradle/caches/transforms-3/426ec55f7d3ce847007a50b675a08475/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+12
+13    <uses-permission android:name="com.sjdev.noteddriverandroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+13-->[androidx.core:core:1.12.0] /home/joeld/.gradle/caches/transforms-3/426ec55f7d3ce847007a50b675a08475/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+13-->[androidx.core:core:1.12.0] /home/joeld/.gradle/caches/transforms-3/426ec55f7d3ce847007a50b675a08475/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+14
+15    <application
+15-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:3:5-16:19
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.12.0] /home/joeld/.gradle/caches/transforms-3/426ec55f7d3ce847007a50b675a08475/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="true"
+19        android:label="@string/app_name" >
+19-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:3:18-50
+20        <service
+20-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:4:9-15:19
+21            android:name="com.sjdev.noteddriverandroid.NotedDriverAndroidService"
+21-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:5:13-54
+22            android:exported="true"
+22-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:7:13-36
+23            android:label="@string/app_name"
+23-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:8:13-45
+24            android:permission="android.permission.BIND_INPUT_METHOD" >
+24-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:6:13-70
+25            <intent-filter>
+25-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:9:13-11:29
+26                <action android:name="android.view.InputMethod" />
+26-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:10:17-67
+26-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:10:25-64
+27            </intent-filter>
+28
+29            <meta-data
+29-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:12:13-14:50
+30                android:name="android.view.im"
+30-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:13:17-47
+31                android:resource="@xml/method" />
+31-->/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/AndroidManifest.xml:14:17-47
+32        </service>
+33    </application>
+34
+35</manifest>

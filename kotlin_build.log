@@ -1,0 +1,602 @@
+openjdk version "17.0.16" 2025-07-15
+OpenJDK Runtime Environment (build 17.0.16+8-Debian-1deb12u1)
+OpenJDK 64-Bit Server VM (build 17.0.16+8-Debian-1deb12u1, mixed mode, sharing)
+Initialized native services in: /home/joeld/.gradle/native
+Initialized jansi services in: /home/joeld/.gradle/native
+Received JVM installation metadata from '/usr/lib/jvm/java-17-openjdk-amd64': {JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, JAVA_VERSION=17.0.16, JAVA_VENDOR=Debian, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+8-Debian-1deb12u1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+8-Debian-1deb12u1, VM_VENDOR=Debian, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 317319). The daemon log file: /home/joeld/.gradle/daemon/8.2.1/daemon-317319.out.log
+Starting 22nd build in daemon [uptime: 1 hrs 21 mins 12.388 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 41% of 384 MiB]
+Using 12 worker leases.
+Not watching /mnt/drive2/tempdefault/git/Noted_Driver since the file system is not supported
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/mnt/drive2/tempdefault/git/Noted_Driver/settings.gradle'.
+Projects loaded. Root project using build file '/mnt/drive2/tempdefault/git/Noted_Driver/build.gradle'.
+Included projects: [root project 'ExampleIME', project ':app']
+
+> Configure project :
+Evaluating root project 'ExampleIME' using build file '/mnt/drive2/tempdefault/git/Noted_Driver/build.gradle'.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration2 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration2 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration2 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration2 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+
+> Configure project :app
+Evaluating project ':app' using build file '/mnt/drive2/tempdefault/git/Noted_Driver/app/build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle81 variant
+All projects evaluated.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :app:classpath is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration :app:classpath is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Task name matched 'compileDebugKotlin'
+Selected primary task 'compileDebugKotlin' from project :
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:compileDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :app:preBuild (Thread[Execution worker,5,main]) started.
+:app:preBuild (Thread[Execution worker,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[Execution worker,5,main]) started.
+:app:preDebugBuild (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[Execution worker Thread 10,5,main]) started.
+:app:checkDebugAarMetadata (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with AarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[Execution worker Thread 10,5,main]) started.
+:app:generateDebugResValues (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[Execution worker Thread 10,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with ExtractAarTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with AarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with IdentityTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with ExtractAarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[Execution worker Thread 10,5,main]) started.
+:app:generateDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Skipping task ':app:generateDebugResources' as it has no actions.
+Resolve mutations for :app:mergeDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+:app:mergeDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+:app:packageDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[Execution worker Thread 2,5,main]) started.
+:app:parseDebugLocalResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Transforming android.jar with PlatformAttrTransform
+Transforming android.jar with PlatformAttrTransform
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 2,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[Execution worker Thread 2,5,main]) started.
+:app:extractDeepLinksDebug (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :app:processDebugMainManifest (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugMainManifest (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with ExtractAarTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with AarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with IdentityTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with ExtractAarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with ExtractAarTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with AarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with IdentityTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with ExtractAarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with AarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with AarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarTransform
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugManifest (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugManifestForPackage (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+:app:processDebugResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processDebugResources UP-TO-DATE
+Transforming aapt2-8.1.1-10154469-linux.jar (com.android.tools.build:aapt2:8.1.1-10154469) with Aapt2Extractor
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with ExtractAarTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with AarResourcesCompilerTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with IdentityTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with ExtractAarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with AarResourcesCompilerTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarResourcesCompilerTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarResourcesCompilerTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarResourcesCompilerTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with AarResourcesCompilerTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with AarResourcesCompilerTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with ExtractAarTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with LibrarySymbolTableTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with IdentityTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with ExtractAarTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with LibrarySymbolTableTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with ExtractAarTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with LibrarySymbolTableTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with LibrarySymbolTableTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with LibrarySymbolTableTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with ExtractAarTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with LibrarySymbolTableTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with IdentityTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with ExtractAarTransform
+Transforming core-runtime-2.1.0.aar (androidx.arch.core:core-runtime:2.1.0) with LibrarySymbolTableTransform
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :app:compileDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+:app:compileDebugKotlin (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:compileDebugKotlin FAILED
+Transforming kotlin-stdlib-jdk8-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0) with IdentityTransform
+Transforming kotlin-stdlib-jdk8-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0) with IdentityTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with IdentityTransform
+Transforming core-ktx-1.12.0.aar (androidx.core:core-ktx:1.12.0) with AarToClassTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with IdentityTransform
+Transforming kotlin-stdlib-jdk7-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0) with IdentityTransform
+Transforming core-1.12.0.aar (androidx.core:core:1.12.0) with AarToClassTransform
+Transforming kotlin-stdlib-jdk7-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with IdentityTransform
+Transforming lifecycle-runtime-2.3.1.aar (androidx.lifecycle:lifecycle-runtime:2.3.1) with AarToClassTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with IdentityTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarToClassTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with IdentityTransform
+Transforming annotation-experimental-1.3.0.aar (androidx.annotation:annotation-experimental:1.3.0) with AarToClassTransform
+Transforming core-common-2.1.0.jar (androidx.arch.core:core-common:2.1.0) with IdentityTransform
+Transforming core-common-2.1.0.jar (androidx.arch.core:core-common:2.1.0) with IdentityTransform
+Transforming lifecycle-common-2.3.1.jar (androidx.lifecycle:lifecycle-common:2.3.1) with IdentityTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+Transforming lifecycle-common-2.3.1.jar (androidx.lifecycle:lifecycle-common:2.3.1) with IdentityTransform
+Transforming annotation-jvm-1.6.0.jar (androidx.annotation:annotation-jvm:1.6.0) with IdentityTransform
+Transforming collection-1.0.0.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+Transforming annotation-jvm-1.6.0.jar (androidx.annotation:annotation-jvm:1.6.0) with IdentityTransform
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with IdentityTransform
+Transforming annotations-13.0.jar (org.jetbrains:annotations:13.0) with IdentityTransform
+Transforming kotlin-stdlib-common-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib-common:1.9.0) with IdentityTransform
+Transforming kotlin-stdlib-common-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib-common:1.9.0) with IdentityTransform
+Transforming kotlin-stdlib-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib:1.9.0) with IdentityTransform
+Transforming kotlin-stdlib-1.9.0.jar (org.jetbrains.kotlin:kotlin-stdlib:1.9.0) with IdentityTransform
+Transforming R.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk8-1.9.0.jar with ClasspathEntrySnapshotTransform
+Transforming core-ktx-1.12.0-api.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk7-1.9.0.jar with ClasspathEntrySnapshotTransform
+Transforming core-1.12.0-api.jar with ClasspathEntrySnapshotTransform
+Transforming lifecycle-runtime-2.3.1-api.jar with ClasspathEntrySnapshotTransform
+Transforming versionedparcelable-1.1.1-api.jar with ClasspathEntrySnapshotTransform
+Transforming lifecycle-common-2.3.1.jar with ClasspathEntrySnapshotTransform
+Transforming core-common-2.1.0.jar with ClasspathEntrySnapshotTransform
+Transforming collection-1.0.0.jar with ClasspathEntrySnapshotTransform
+Transforming annotation-jvm-1.6.0.jar with ClasspathEntrySnapshotTransform
+Transforming annotation-experimental-1.3.0-api.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-1.9.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-common-1.9.0.jar with ClasspathEntrySnapshotTransform
+Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+Transforming android.jar with ClasspathEntrySnapshotTransform
+Transforming core-lambda-stubs.jar with ClasspathEntrySnapshotTransform
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugKotlin'.
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/kotlin', not found
+file or directory '/mnt/drive2/tempdefault/git/Noted_Driver/app/src/debug/java', not found
+Kotlin source files: /mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/java/com/sjdev/noteddriverandroid/KeyMasks.kt, /mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/java/com/sjdev/noteddriverandroid/LayerManager.kt, /mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/java/com/sjdev/noteddriverandroid/MappingManager.kt, /mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/java/com/sjdev/noteddriverandroid/NotedDriverAndroidService.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+i: found daemon on port 17994 (4532552 ms old), trying to connect
+i: connected to the daemon
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), areFileChangesKnown=false, modifiedFiles=null, deletedFiles=null, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=/mnt/drive2/tempdefault/git/Noted_Driver/app/build/kotlin/compileDebugKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/mnt/drive2/tempdefault/git/Noted_Driver/app/build/kotlin/compileDebugKotlin/local-state/build-history.bin, useModuleDetection=true), usePreciseJavaTracking=true, outputFiles=[/mnt/drive2/tempdefault/git/Noted_Driver/app/build/tmp/kotlin-classes/debug, /mnt/drive2/tempdefault/git/Noted_Driver/app/build/kotlin/compileDebugKotlin/cacheable, /mnt/drive2/tempdefault/git/Noted_Driver/app/build/kotlin/compileDebugKotlin/local-state])
+w: Argument -Xopt-in is deprecated. Please use -opt-in instead
+e: file:///mnt/drive2/tempdefault/git/Noted_Driver/app/src/main/java/com/sjdev/noteddriverandroid/MappingManager.kt:65:37 The feature "break continue in inline lambdas" is experimental and should be enabled explicitly
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileDebugKotlin'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:149)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:147)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:135)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:337)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:324)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:317)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:283)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:321)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:304)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:309)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:256)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:233)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:216)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:199)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:166)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:50)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:28)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.executeDelegateBroadcastingChanges(CaptureStateAfterExecutionStep.java:100)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:72)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:50)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:179)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:70)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:59)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:68)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:25)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:36)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:22)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:91)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:37)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:77)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:38)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:94)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:49)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:71)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.executeWithNonEmptySources(SkipEmptyWorkStep.java:177)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:86)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:53)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:32)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:21)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.lambda$execute$0(AssignWorkspaceStep.java:32)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:293)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:30)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:21)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:37)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:27)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:47)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:34)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:146)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:135)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:337)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:324)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:317)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:22)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:144)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:76)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:114)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+	... 2 more
+
+
+BUILD FAILED in 1s
+13 actionable tasks: 1 executed, 12 up-to-date
+Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.

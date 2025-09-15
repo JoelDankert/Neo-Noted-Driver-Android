@@ -1,0 +1,199 @@
+{
+    "mappings": {
+        "M1": {
+            "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_Z" },      
+            "KEYCODE_W": { "type": "KEYCODE", "key": "KEYCODE_Y" },      
+            "KEYCODE_E": { "type": "KEYCODE", "key": "KEYCODE_U" },      
+            "KEYCODE_R": { "type": "KEYCODE", "key": "KEYCODE_A" },      
+            "KEYCODE_T": { "type": "KEYCODE", "key": "KEYCODE_Q" },      
+            "KEYCODE_Y": { "type": "KEYCODE", "key": "KEYCODE_P" },      
+            "KEYCODE_U": { "type": "KEYCODE", "key": "KEYCODE_B" },      
+            "KEYCODE_I": { "type": "KEYCODE", "key": "KEYCODE_M" },      
+            "KEYCODE_O": { "type": "KEYCODE", "key": "KEYCODE_L" },      
+            "KEYCODE_P": { "type": "KEYCODE", "key": "KEYCODE_F" },      
+
+            
+            "KEYCODE_LEFT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_J" },     
+            "KEYCODE_RIGHT_BRACKET": { "type": "TEXT",    "text": "ß" },            
+
+            
+            "KEYCODE_A": { "type": "KEYCODE", "key": "KEYCODE_C" },      
+            "KEYCODE_S": { "type": "KEYCODE", "key": "KEYCODE_S" },      
+            "KEYCODE_D": { "type": "KEYCODE", "key": "KEYCODE_I" },      
+            "KEYCODE_F": { "type": "KEYCODE", "key": "KEYCODE_E" },      
+            "KEYCODE_G": { "type": "KEYCODE", "key": "KEYCODE_O" },      
+            "KEYCODE_H": { "type": "KEYCODE", "key": "KEYCODE_D" },      
+            "KEYCODE_J": { "type": "KEYCODE", "key": "KEYCODE_T" },      
+            "KEYCODE_K": { "type": "KEYCODE", "key": "KEYCODE_N" },      
+            "KEYCODE_L": { "type": "KEYCODE", "key": "KEYCODE_R" },      
+            "KEYCODE_SEMICOLON": { "type": "KEYCODE", "key": "KEYCODE_H" }, 
+
+            
+            "KEYCODE_APOSTROPHE": { "type": "KEYCODE", "key": "KEYCODE_APOSTROPHE" },
+
+            
+            "KEYCODE_BACKSLASH": { "type": "TEXT", "text": "´" },
+
+            
+            "KEYCODE_Z": { "type": "KEYCODE", "key": "KEYCODE_V" },      
+            "KEYCODE_X": { "type": "KEYCODE", "key": "KEYCODE_X" },      
+            "KEYCODE_C": { "type": "TEXT",    "text": "ü" },             
+            "KEYCODE_V": { "type": "TEXT",    "text": "ä" },             
+            "KEYCODE_B": { "type": "TEXT",    "text": "ö" },             
+            "KEYCODE_N": { "type": "KEYCODE", "key": "KEYCODE_W" },      
+            "KEYCODE_M": { "type": "KEYCODE", "key": "KEYCODE_G" },      
+
+            
+            "KEYCODE_COMMA":  { "type": "KEYCODE", "key": "KEYCODE_COMMA" },  
+            "KEYCODE_PERIOD": { "type": "KEYCODE", "key": "KEYCODE_PERIOD" }, 
+
+            
+            "KEYCODE_SLASH": { "type": "KEYCODE", "key": "KEYCODE_K" },   
+
+            
+            "KEYCODE_SPACE":  { "type": "KEYCODE", "key": "KEYCODE_SPACE" },
+            "KEYCODE_TAB":    { "type": "KEYCODE", "key": "KEYCODE_TAB" },
+            "KEYCODE_ENTER":  { "type": "KEYCODE", "key": "KEYCODE_ENTER" },
+            "KEYCODE_DEL":    { "type": "KEYCODE", "key": "KEYCODE_DEL" },
+            "KEYCODE_ESCAPE": { "type": "KEYCODE", "key": "KEYCODE_ESCAPE" }
+        },
+
+        "M2": {
+            
+            "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_Z", "modifiers": ["SHIFT"] },
+            "KEYCODE_W": { "type": "KEYCODE", "key": "KEYCODE_Y", "modifiers": ["SHIFT"] },
+            "KEYCODE_E": { "type": "KEYCODE", "key": "KEYCODE_U", "modifiers": ["SHIFT"] },
+            "KEYCODE_R": { "type": "KEYCODE", "key": "KEYCODE_A", "modifiers": ["SHIFT"] },
+            "KEYCODE_T": { "type": "KEYCODE", "key": "KEYCODE_Q", "modifiers": ["SHIFT"] },
+            "KEYCODE_Y": { "type": "KEYCODE", "key": "KEYCODE_P", "modifiers": ["SHIFT"] },
+            "KEYCODE_U": { "type": "KEYCODE", "key": "KEYCODE_B", "modifiers": ["SHIFT"] },
+            "KEYCODE_I": { "type": "KEYCODE", "key": "KEYCODE_M", "modifiers": ["SHIFT"] },
+            "KEYCODE_O": { "type": "KEYCODE", "key": "KEYCODE_L", "modifiers": ["SHIFT"] },
+            "KEYCODE_P": { "type": "KEYCODE", "key": "KEYCODE_F", "modifiers": ["SHIFT"] },
+
+            "KEYCODE_LEFT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_J", "modifiers": ["SHIFT"] },
+            "KEYCODE_RIGHT_BRACKET": { "type": "TEXT",    "text": "ẞ" },
+
+            "KEYCODE_A": { "type": "KEYCODE", "key": "KEYCODE_C", "modifiers": ["SHIFT"] },
+            "KEYCODE_S": { "type": "KEYCODE", "key": "KEYCODE_S", "modifiers": ["SHIFT"] },
+            "KEYCODE_D": { "type": "KEYCODE", "key": "KEYCODE_I", "modifiers": ["SHIFT"] },
+            "KEYCODE_F": { "type": "KEYCODE", "key": "KEYCODE_E", "modifiers": ["SHIFT"] },
+            "KEYCODE_G": { "type": "KEYCODE", "key": "KEYCODE_O", "modifiers": ["SHIFT"] },
+            "KEYCODE_H": { "type": "KEYCODE", "key": "KEYCODE_D", "modifiers": ["SHIFT"] },
+            "KEYCODE_J": { "type": "KEYCODE", "key": "KEYCODE_T", "modifiers": ["SHIFT"] },
+            "KEYCODE_K": { "type": "KEYCODE", "key": "KEYCODE_N", "modifiers": ["SHIFT"] },
+            "KEYCODE_L": { "type": "KEYCODE", "key": "KEYCODE_R", "modifiers": ["SHIFT"] },
+            "KEYCODE_SEMICOLON": { "type": "KEYCODE", "key": "KEYCODE_H", "modifiers": ["SHIFT"] },
+
+            "KEYCODE_APOSTROPHE": { "type": "KEYCODE", "key": "KEYCODE_APOSTROPHE", "modifiers": ["SHIFT"] },
+            "KEYCODE_BACKSLASH":  { "type": "TEXT", "text": "~" },
+
+            "KEYCODE_Z": { "type": "KEYCODE", "key": "KEYCODE_V", "modifiers": ["SHIFT"] },
+            "KEYCODE_X": { "type": "KEYCODE", "key": "KEYCODE_X", "modifiers": ["SHIFT"] },
+
+            "KEYCODE_C": { "type": "TEXT", "text": "Ü" },
+            "KEYCODE_V": { "type": "TEXT", "text": "Ä" },
+            "KEYCODE_B": { "type": "TEXT", "text": "Ö" },
+
+            "KEYCODE_N": { "type": "KEYCODE", "key": "KEYCODE_W", "modifiers": ["SHIFT"] },
+            "KEYCODE_M": { "type": "KEYCODE", "key": "KEYCODE_G", "modifiers": ["SHIFT"] },
+
+            "KEYCODE_COMMA":  { "type": "KEYCODE", "key": "KEYCODE_COMMA",  "modifiers": ["SHIFT"] },
+            "KEYCODE_PERIOD": { "type": "KEYCODE", "key": "KEYCODE_PERIOD", "modifiers": ["SHIFT"] },
+
+            "KEYCODE_SLASH": { "type": "KEYCODE", "key": "KEYCODE_K", "modifiers": ["SHIFT"] },
+
+            "KEYCODE_SPACE":  { "type": "KEYCODE", "key": "KEYCODE_SPACE", "modifiers": ["SHIFT"] },
+            "KEYCODE_TAB":    { "type": "KEYCODE", "key": "KEYCODE_TAB",   "modifiers": ["SHIFT"] },
+            "KEYCODE_ENTER":  { "type": "KEYCODE", "key": "KEYCODE_ENTER", "modifiers": ["SHIFT"] },
+            "KEYCODE_DEL":    { "type": "KEYCODE", "key": "KEYCODE_DEL",   "modifiers": ["SHIFT"] },
+            "KEYCODE_ESCAPE": { "type": "KEYCODE", "key": "KEYCODE_ESCAPE","modifiers": ["SHIFT"] }
+        },
+
+        "M3": {
+            "KEYCODE_Q": { "type": "TEXT", "text": "…" },
+
+            "KEYCODE_W": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_MINUS", "modifiers": ["SHIFT"] } ] },           
+            "KEYCODE_E": { "type": "KEYCODE",  "key": "KEYCODE_LEFT_BRACKET" },                                             
+            "KEYCODE_R": { "type": "KEYCODE",  "key": "KEYCODE_RIGHT_BRACKET" },                                            
+            "KEYCODE_T": { "type": "TEXT",     "text": "^" },                                                               
+            "KEYCODE_Y": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_1", "modifiers": ["SHIFT"] } ] },               
+            "KEYCODE_U": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_COMMA",  "modifiers": ["SHIFT"] } ] },          
+            "KEYCODE_I": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_PERIOD", "modifiers": ["SHIFT"] } ] },          
+            "KEYCODE_O": { "type": "KEYCODE",  "key": "KEYCODE_EQUALS" },                                                   
+            "KEYCODE_P": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_7", "modifiers": ["SHIFT"] } ] },               
+
+            "KEYCODE_LEFT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_AT" },                                            
+            "KEYCODE_RIGHT_BRACKET": { "type": "TEXT",    "text": "ſ" },                                                    
+
+            
+            "KEYCODE_A": { "type": "KEYCODE",  "key": "KEYCODE_BACKSLASH" },                                                
+            "KEYCODE_S": { "type": "KEYCODE",  "key": "KEYCODE_SLASH" },                                                    
+            "KEYCODE_D": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_LEFT_BRACKET",  "modifiers": ["SHIFT"] } ] },   
+            "KEYCODE_F": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_RIGHT_BRACKET", "modifiers": ["SHIFT"] } ] },   
+            "KEYCODE_G": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_8", "modifiers": ["SHIFT"] } ] },               
+            "KEYCODE_H": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_SLASH", "modifiers": ["SHIFT"] } ] },           
+            "KEYCODE_J": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_9", "modifiers": ["SHIFT"] } ] },               
+            "KEYCODE_K": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_0", "modifiers": ["SHIFT"] } ] },               
+            "KEYCODE_L": { "type": "KEYCODE",  "key": "KEYCODE_MINUS" },                                                    
+            "KEYCODE_SEMICOLON": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_SEMICOLON", "modifiers": ["SHIFT"] } ] }, 
+            "KEYCODE_BACKSLASH": { "type": "TEXT", "text": "̵" },                                                           
+
+            
+            "KEYCODE_Z": { "type": "KEYCODE",  "key": "KEYCODE_POUND" },                                                    
+            "KEYCODE_X": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_4", "modifiers": ["SHIFT"] } ] },               
+            "KEYCODE_C": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_BACKSLASH", "modifiers": ["SHIFT"] } ] },       
+            "KEYCODE_V": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_GRAVE", "modifiers": ["SHIFT"] } ] },           
+            "KEYCODE_B": { "type": "KEYCODE",  "key": "KEYCODE_GRAVE" },                                                    
+            "KEYCODE_N": { "type": "KEYCODE",  "key": "KEYCODE_PLUS" },                                                     
+            "KEYCODE_M": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_5", "modifiers": ["SHIFT"] } ] },               
+            "KEYCODE_COMMA":  { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_APOSTROPHE", "modifiers": ["SHIFT"] } ] }, 
+            "KEYCODE_PERIOD": { "type": "KEYCODE",  "key": "KEYCODE_APOSTROPHE" },                                          
+            "KEYCODE_SLASH":  { "type": "KEYCODE",  "key": "KEYCODE_SEMICOLON" }                                            
+    },
+
+    "M4": {
+        "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_PAGE_UP" },
+        "KEYCODE_W": { "type": "KEYCODE", "key": "KEYCODE_DEL" },                
+        "KEYCODE_E": { "type": "KEYCODE", "key": "KEYCODE_DPAD_UP" },
+        "KEYCODE_R": { "type": "KEYCODE", "key": "KEYCODE_FORWARD_DEL" },        
+        "KEYCODE_T": { "type": "KEYCODE", "key": "KEYCODE_PAGE_DOWN" },
+        "KEYCODE_Y": { "type": "TEXT",    "text": "¡" },                         
+
+        "KEYCODE_U": { "type": "KEYCODE", "key": "KEYCODE_7" },
+        "KEYCODE_I": { "type": "KEYCODE", "key": "KEYCODE_8" },
+        "KEYCODE_O": { "type": "KEYCODE", "key": "KEYCODE_9" },
+
+        "KEYCODE_P":              { "type": "KEYCODE", "key": "KEYCODE_NUMPAD_ADD" },       
+        "KEYCODE_LEFT_BRACKET":   { "type": "KEYCODE", "key": "KEYCODE_NUMPAD_SUBTRACT" },  
+        "KEYCODE_RIGHT_BRACKET":  { "type": "KEYCODE", "key": "KEYCODE_SEMICOLON" },        
+
+        
+        "KEYCODE_A": { "type": "KEYCODE", "key": "KEYCODE_MOVE_HOME" },           
+        "KEYCODE_S": { "type": "KEYCODE", "key": "KEYCODE_DPAD_LEFT" },
+        "KEYCODE_D": { "type": "KEYCODE", "key": "KEYCODE_DPAD_DOWN" },
+        "KEYCODE_F": { "type": "KEYCODE", "key": "KEYCODE_DPAD_RIGHT" },
+        "KEYCODE_G": { "type": "KEYCODE", "key": "KEYCODE_MOVE_END" },            
+        "KEYCODE_H": { "type": "TEXT",    "text": "¿" },                          
+
+        "KEYCODE_J": { "type": "KEYCODE", "key": "KEYCODE_4" },
+        "KEYCODE_K": { "type": "KEYCODE", "key": "KEYCODE_5" },
+        "KEYCODE_L": { "type": "KEYCODE", "key": "KEYCODE_6" },
+        "KEYCODE_SEMICOLON": { "type": "KEYCODE", "key": "KEYCODE_PERIOD" },
+
+        
+        "KEYCODE_Z": { "type": "KEYCODE", "key": "KEYCODE_ESCAPE" },
+        "KEYCODE_X": { "type": "KEYCODE", "key": "KEYCODE_TAB" },
+        "KEYCODE_V": { "type": "KEYCODE", "key": "KEYCODE_ENTER" },
+        "KEYCODE_N": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_SEMICOLON", "modifiers": ["SHIFT"] } ] },
+
+        "KEYCODE_M": { "type": "KEYCODE", "key": "KEYCODE_1" },
+        "KEYCODE_COMMA": { "type": "KEYCODE", "key": "KEYCODE_2" },
+        "KEYCODE_PERIOD": { "type": "KEYCODE", "key": "KEYCODE_3" },
+        "KEYCODE_SLASH": { "type": "KEYCODE", "key": "KEYCODE_COMMA" },
+        "KEYCODE_SPACE": { "type": "KEYCODE", "key": "KEYCODE_0" }           
+    },
+    "M5": {},
+    "M6": {}
+}
+}
