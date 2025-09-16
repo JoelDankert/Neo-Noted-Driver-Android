@@ -98,8 +98,8 @@
             "KEYCODE_N": { "type": "KEYCODE", "key": "KEYCODE_W", "modifiers": ["SHIFT"] },
             "KEYCODE_M": { "type": "KEYCODE", "key": "KEYCODE_G", "modifiers": ["SHIFT"] },
 
-            "KEYCODE_COMMA":  { "type": "KEYCODE", "key": "KEYCODE_COMMA",  "modifiers": ["SHIFT"] },
-            "KEYCODE_PERIOD": { "type": "KEYCODE", "key": "KEYCODE_PERIOD", "modifiers": ["SHIFT"] },
+            "KEYCODE_COMMA":  { "type": "TEXT", "text": "–" },
+            "KEYCODE_PERIOD":  { "type": "TEXT", "text": "·" },
 
             "KEYCODE_SLASH": { "type": "KEYCODE", "key": "KEYCODE_K", "modifiers": ["SHIFT"] },
 
@@ -108,6 +108,7 @@
             "KEYCODE_ENTER":  { "type": "KEYCODE", "key": "KEYCODE_ENTER", "modifiers": ["SHIFT"] },
             "KEYCODE_DEL":    { "type": "KEYCODE", "key": "KEYCODE_DEL",   "modifiers": ["SHIFT"] },
             "KEYCODE_ESCAPE": { "type": "KEYCODE", "key": "KEYCODE_ESCAPE","modifiers": ["SHIFT"] }
+
         },
 
         "M3": {
