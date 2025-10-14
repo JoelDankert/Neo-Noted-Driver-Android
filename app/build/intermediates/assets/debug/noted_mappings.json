@@ -59,6 +59,19 @@
         },
 
         "M2": {
+            "KEYCODE_GRAVE": { "type": "TEXT", "text": "ˇ" },
+            "KEYCODE_1":     { "type": "TEXT", "text": "°" },
+            "KEYCODE_2":     { "type": "TEXT", "text": "§" },
+            "KEYCODE_3":     { "type": "TEXT", "text": "ℓ" },
+            "KEYCODE_4":     { "type": "TEXT", "text": "»" },
+            "KEYCODE_5":     { "type": "TEXT", "text": "«" },
+            "KEYCODE_6":     { "type": "TEXT", "text": "$" },
+            "KEYCODE_7":     { "type": "TEXT", "text": "€" },
+            "KEYCODE_8":     { "type": "TEXT", "key": "„" },
+            "KEYCODE_9":     { "type": "TEXT", "key": "“" },
+            "KEYCODE_0":     { "type": "TEXT", "key": "”" },
+            "KEYCODE_MINUS": { "type": "TEXT", "key": "—" },
+            "KEYCODE_EQUALS":{ "type": "TEXT", "text": "¸" },
 
             "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_Z", "modifiers": ["SHIFT"] },
             "KEYCODE_W": { "type": "KEYCODE", "key": "KEYCODE_Y", "modifiers": ["SHIFT"] },
@@ -112,8 +125,21 @@
         },
 
         "M3": {
-            "KEYCODE_Q": { "type": "TEXT", "text": "…" },
+            "KEYCODE_GRAVE": { "type": "TEXT", "text": "↻" },
+            "KEYCODE_1":     { "type": "TEXT", "text": "¹" },
+            "KEYCODE_2":     { "type": "TEXT", "text": "²" },
+            "KEYCODE_3":     { "type": "TEXT", "text": "³" },
+            "KEYCODE_4":     { "type": "TEXT", "text": "›" },
+            "KEYCODE_5":     { "type": "TEXT", "text": "‹" },
+            "KEYCODE_6":     { "type": "TEXT", "text": "¢" },
+            "KEYCODE_7":     { "type": "TEXT", "text": "¥" },
+            "KEYCODE_8":     { "type": "TEXT", "key": "‚" },
+            "KEYCODE_9":     { "type": "TEXT", "key": "‘" },
+            "KEYCODE_0":     { "type": "TEXT", "key": "’" },
+            "KEYCODE_MINUS": { "type": "TEXT", "key": "" },
+            "KEYCODE_EQUALS":{ "type": "TEXT", "text": "°" },
 
+            "KEYCODE_Q": { "type": "TEXT", "text": "…" },
             "KEYCODE_W": { "type": "SEQUENCE", "steps": [ { "key": "KEYCODE_MINUS", "modifiers": ["SHIFT"] } ] },           
             "KEYCODE_E": { "type": "KEYCODE",  "key": "KEYCODE_LEFT_BRACKET" },                                             
             "KEYCODE_R": { "type": "KEYCODE",  "key": "KEYCODE_RIGHT_BRACKET" },                                            
