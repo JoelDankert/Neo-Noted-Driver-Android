@@ -31,6 +31,9 @@
 
             "KEYCODE_APOSTROPHE": { "type": "KEYCODE", "key": "KEYCODE_APOSTROPHE" },
 
+            "KEYCODE_GRAVE": { "type": "TEXT", "text": "^" },
+            "KEYCODE_MINUS": { "type": "TEXT", "text": "-" },
+            "KEYCODE_EQUALS":{ "type": "TEXT", "text": "`" },
 
             "KEYCODE_BACKSLASH": { "type": "TEXT", "text": "´" },
 
@@ -67,10 +70,10 @@
             "KEYCODE_5":     { "type": "TEXT", "text": "«" },
             "KEYCODE_6":     { "type": "TEXT", "text": "$" },
             "KEYCODE_7":     { "type": "TEXT", "text": "€" },
-            "KEYCODE_8":     { "type": "TEXT", "key": "„" },
-            "KEYCODE_9":     { "type": "TEXT", "key": "“" },
-            "KEYCODE_0":     { "type": "TEXT", "key": "”" },
-            "KEYCODE_MINUS": { "type": "TEXT", "key": "—" },
+            "KEYCODE_8":     { "type": "TEXT", "text": "„" },
+            "KEYCODE_9":     { "type": "TEXT", "text": "“" },
+            "KEYCODE_0":     { "type": "TEXT", "text": "”" },
+            "KEYCODE_MINUS": { "type": "TEXT", "text": "—" },
             "KEYCODE_EQUALS":{ "type": "TEXT", "text": "¸" },
 
             "KEYCODE_Q": { "type": "KEYCODE", "key": "KEYCODE_Z", "modifiers": ["SHIFT"] },
@@ -133,9 +136,9 @@
             "KEYCODE_5":     { "type": "TEXT", "text": "‹" },
             "KEYCODE_6":     { "type": "TEXT", "text": "¢" },
             "KEYCODE_7":     { "type": "TEXT", "text": "¥" },
-            "KEYCODE_8":     { "type": "TEXT", "key": "‚" },
-            "KEYCODE_9":     { "type": "TEXT", "key": "‘" },
-            "KEYCODE_0":     { "type": "TEXT", "key": "’" },
+            "KEYCODE_8":     { "type": "TEXT", "text": "‚" },
+            "KEYCODE_9":     { "type": "TEXT", "text": "‘" },
+            "KEYCODE_0":     { "type": "TEXT", "text": "’" },
             "KEYCODE_MINUS": { "type": "TEXT", "key": "" },
             "KEYCODE_EQUALS":{ "type": "TEXT", "text": "°" },
 
