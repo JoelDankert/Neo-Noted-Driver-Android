@@ -18,21 +18,26 @@ android {
         applicationId "com.sjdev.noteddriverandroid"
         minSdk 21
         targetSdk 34
+        versionCode 2
+        versionName "1.1.0"
+    }
+
+    buildTypes {
+        preview {
+            initWith debug
+            applicationIdSuffix ".preview"
+            versionNameSuffix "-preview"
+            matchingFallbacks = ['debug']
+        }
     }
 }
 
 dependencies {
-    implementation "androidx.core:core-ktx:1.12.0"
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.json:json:20231013"
 }
 
 repositories {
     google()
     mavenCentral()
-}
-
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
-}
-
-/* Added by you-assistant: enable Kotlin non-local break/continue feature */
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
 }
