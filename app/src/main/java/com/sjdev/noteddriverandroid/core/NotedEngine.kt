@@ -8,7 +8,11 @@ data class Stroke(
     val repeatCount: Int = 0,
     val deviceId: Int = 0,
     val flags: Int = 0,
+    val metaState: Int = 0,
+    val metaStateReliable: Boolean = false,
 )
+
+data class KeyDispatch(val handled: Boolean, val effects: List<Effect>)
 
 sealed interface Effect {
     data class Text(val value: String) : Effect
@@ -39,13 +43,26 @@ class NotedEngine(
     }
 
     private val held = mutableMapOf<PhysicalId, Held>()
-    private val modifiers = mutableSetOf<ModifierRole>()
+    private val modifierPresses = mutableMapOf<PhysicalId, ModifierRole>()
+    private var reportedModifiers: Set<ModifierRole> = emptySet()
+    private val modifiers: Set<ModifierRole>
+        get() = modifierPresses.values.toSet() + reportedModifiers
     private var shiftLock = false
     private var mod4Lock = false
     private var nonModifierUsed = false
     private var compose = ""
 
+    fun dispatchDown(event: Stroke) = KeyDispatch(true, down(event))
+
+    fun dispatchUp(event: Stroke): KeyDispatch {
+        val owned = owns(event)
+        return KeyDispatch(owned, up(event))
+    }
+
+    fun owns(event: Stroke): Boolean = event.id() in held
+
     fun down(event: Stroke): List<Effect> {
+        reconcileMetadata(event)
         val id = event.id()
         held[id]?.let { previous ->
             return when (previous) {
@@ -57,7 +74,7 @@ class NotedEngine(
         }
 
         modifierRole(event)?.let { role ->
-            modifierDown(role)
+            modifierDown(role, id)
             val output = if (role.isMod3()) suppressNativeShifts(event.eventTime) else nativeModifierEvent(event, true)
             val ownsNativeKey = event.keyCode in NATIVE_MODIFIER_KEYS &&
                 !(role.isShift() && modifiers.any { it.isMod3() })
@@ -109,14 +126,15 @@ class NotedEngine(
     }
 
     fun up(event: Stroke): List<Effect> {
+        reconcileMetadata(event, modifierRole(event))
         val previous = held.remove(event.id()) ?: return emptyList()
-        modifierRole(event)?.let { role ->
+        modifierRole(event)?.let {
             val output = if (previous is Held.Native) {
                 listOf(Effect.Key(false, previous.keyCode, previous.downTime, event.eventTime, 0, previous.meta, previous.flags))
             } else {
                 emptyList()
             }
-            modifiers.remove(role)
+            modifierPresses.remove(event.id())
             return output
         }
         return if (previous is Held.Native) {
@@ -131,7 +149,8 @@ class NotedEngine(
             Effect.Key(false, it.keyCode, it.downTime, now, 0, it.meta, it.flags)
         }
         held.clear()
-        modifiers.clear()
+        modifierPresses.clear()
+        reportedModifiers = emptySet()
         shiftLock = false
         mod4Lock = false
         nonModifierUsed = false
@@ -161,13 +180,34 @@ class NotedEngine(
         else -> null
     }
 
-    private fun modifierDown(role: ModifierRole) {
-        if (role in modifiers) return
-        if (role.isShift() && modifiers.any { it.isShift() } && !nonModifierUsed) shiftLock = !shiftLock
-        if (role.isMod3() && modifiers.any { it.isMod3() } && !nonModifierUsed) compose = "S__Comp"
-        if (role.isMod4() && modifiers.any { it.isMod4() } && !nonModifierUsed) mod4Lock = !mod4Lock
-        modifiers += role
+    private fun modifierDown(role: ModifierRole, id: PhysicalId) {
+        // Chords require observed physical presses, not snapshot bits that already
+        // include this very modifier-down event. Multiple devices own separately.
+        val physical = modifierPresses.values.toSet()
+        if (role !in physical) {
+            if (role.isShift() && physical.any { it.isShift() } && !nonModifierUsed) shiftLock = !shiftLock
+            if (role.isMod3() && physical.any { it.isMod3() } && !nonModifierUsed) compose = "S__Comp"
+            if (role.isMod4() && physical.any { it.isMod4() } && !nonModifierUsed) mod4Lock = !mod4Lock
+        }
+        modifierPresses[id] = role
         nonModifierUsed = false
+    }
+
+    private fun reconcileMetadata(event: Stroke, released: ModifierRole? = null) {
+        // Snapshots describe this event, not a persistent second keyboard. Never
+        // replay them into another device's event or infer Caps/Mod3 from locks.
+        reportedModifiers = if (!event.metaStateReliable) emptySet() else buildSet {
+            val bits = event.metaState
+            fun sides(generic: Int, left: Int, right: Int, leftRole: ModifierRole, rightRole: ModifierRole) {
+                if (bits and left != 0) add(leftRole)
+                if (bits and right != 0) add(rightRole)
+                if (bits and generic != 0 && bits and (left or right) == 0) add(leftRole)
+            }
+            sides(Meta.SHIFT, Meta.SHIFT_LEFT, Meta.SHIFT_RIGHT, ModifierRole.LEFT_SHIFT, ModifierRole.RIGHT_SHIFT)
+            sides(Meta.CTRL, Meta.CTRL_LEFT, Meta.CTRL_RIGHT, ModifierRole.LEFT_CTRL, ModifierRole.RIGHT_CTRL)
+            sides(Meta.META, Meta.META_LEFT, Meta.META_RIGHT, ModifierRole.LEFT_META, ModifierRole.RIGHT_META)
+            sides(Meta.ALT, Meta.ALT_LEFT, Meta.ALT_RIGHT, ModifierRole.LEFT_ALT, ModifierRole.RIGHT_MOD4)
+        } - setOfNotNull(released)
     }
 
     private fun ModifierRole.isShift() = this == ModifierRole.LEFT_SHIFT || this == ModifierRole.RIGHT_SHIFT

@@ -272,6 +272,113 @@ class NotedEngineTest {
         assertFails { LegacyOverrides.parse("""{"mappings":{"M1":{"KEYCODE_Q":{"type":"BROKEN"}}}}""") { keyCodes[it] } }
     }
 
+    @Test fun reliableIncomingCtrlAndShiftRestoreAfterFocusResetThenClearOnZeroMeta() {
+        down(K.CTRL_L, 29)
+        engine.reset(20)
+
+        val ctrlPress = engine.dispatchDown(
+            Stroke(K.A + 16, 16, 30, 31, deviceId = 1,
+                metaState = Meta.CTRL or Meta.CTRL_LEFT, metaStateReliable = true),
+        )
+        assertTrue(ctrlPress.handled)
+        val shortcut = ctrlPress.effects.single() as Effect.Key
+        assertEquals(K.Z, shortcut.keyCode)
+        assertEquals(Meta.CTRL, shortcut.meta)
+        assertTrue(engine.dispatchUp(Stroke(K.A + 16, 16, 30, 32, deviceId = 1,
+            metaState = Meta.CTRL or Meta.CTRL_LEFT, metaStateReliable = true)).handled)
+
+        engine.reset(40)
+        assertEquals("Z", text(engine.dispatchDown(Stroke(K.A + 16, 16, 50, 51, deviceId = 1,
+            metaState = Meta.SHIFT, metaStateReliable = true)).effects))
+        assertTrue(engine.dispatchUp(Stroke(K.A + 16, 16, 50, 52, deviceId = 1,
+            metaState = Meta.SHIFT, metaStateReliable = true)).handled)
+        assertEquals("z", text(engine.dispatchDown(Stroke(K.A + 16, 16, 60, 61, deviceId = 1,
+            metaState = 0, metaStateReliable = true)).effects))
+    }
+
+    @Test fun incomingSideFlagsRestoreStandardModifiersButRightAltOnlyRestoresMod4() {
+        fun press(meta: Int): List<Effect> {
+            val candidate = NotedEngine(data)
+            return candidate.dispatchDown(Stroke(K.A + 16, 16, 1, 2, deviceId = 7,
+                metaState = meta, metaStateReliable = true)).effects
+        }
+
+        assertEquals("Z", text(press(Meta.SHIFT or Meta.SHIFT_RIGHT)))
+        assertEquals(Meta.CTRL, (press(Meta.CTRL or Meta.CTRL_RIGHT).single() as Effect.Key).meta)
+        assertEquals(Meta.META, (press(Meta.META or Meta.META_RIGHT).single() as Effect.Key).meta)
+        assertEquals(Meta.ALT, (press(Meta.ALT or Meta.ALT_LEFT).single() as Effect.Key).meta)
+
+        val rightAlt = press(Meta.ALT or Meta.ALT_RIGHT)
+        assertTrue(rightAlt.isNotEmpty())
+        assertTrue(rightAlt.none { it is Effect.Key && it.meta and (Meta.ALT or Meta.CTRL) != 0 })
+        assertEquals("z", text(press(Meta.CAPS_LOCK)))
+    }
+
+    @Test fun reliableMetadataIsPerDeviceAndDoesNotClearExplicitModifierOwnership() {
+        val candidate = NotedEngine(data)
+        candidate.dispatchDown(Stroke(K.CTRL_L, 29, 1, 1, deviceId = 1))
+        candidate.dispatchDown(Stroke(K.CTRL_L, 29, 2, 2, deviceId = 2))
+        assertTrue(candidate.dispatchUp(Stroke(K.CTRL_L, 29, 1, 3, deviceId = 1)).handled)
+
+        val stillControlled = candidate.dispatchDown(Stroke(K.A + 16, 16, 4, 4, deviceId = 1,
+            metaState = 0, metaStateReliable = true)).effects.single() as Effect.Key
+        assertEquals(Meta.CTRL, stillControlled.meta)
+        candidate.dispatchUp(Stroke(K.A + 16, 16, 4, 5, deviceId = 1,
+            metaState = 0, metaStateReliable = true))
+        candidate.dispatchUp(Stroke(K.CTRL_L, 29, 2, 6, deviceId = 2))
+
+        val deviceTwoMeta = candidate.dispatchDown(Stroke(K.A + 16, 16, 7, 7, deviceId = 2,
+            metaState = Meta.CTRL, metaStateReliable = true)).effects.single() as Effect.Key
+        assertEquals(Meta.CTRL, deviceTwoMeta.meta)
+        candidate.dispatchUp(Stroke(K.A + 16, 16, 7, 8, deviceId = 2,
+            metaState = Meta.CTRL, metaStateReliable = true))
+        assertEquals("z", text(candidate.dispatchDown(Stroke(K.A + 16, 16, 9, 9, deviceId = 1,
+            metaState = 0, metaStateReliable = true)).effects))
+    }
+
+    @Test fun dispatchStatusDistinguishesOwnedEmptyReleasesFromUnownedUpsAndReset() {
+        assertFalse(engine.dispatchUp(Stroke(K.A + 16, 16, 1, 2)).handled)
+
+        val textDown = engine.dispatchDown(Stroke(K.A + 16, 16, 3, 4))
+        assertTrue(textDown.handled)
+        assertTrue(textDown.effects.single() is Effect.Text)
+        val textUp = engine.dispatchUp(Stroke(K.A + 16, 16, 3, 5))
+        assertTrue(textUp.handled)
+        assertTrue(textUp.effects.isEmpty())
+
+        val consumedModifier = engine.dispatchDown(Stroke(K.CAPS, 58, 6, 7))
+        assertTrue(consumedModifier.handled)
+        assertTrue(consumedModifier.effects.isEmpty())
+        assertTrue(engine.dispatchUp(Stroke(K.CAPS, 58, 6, 8)).handled)
+
+        engine.dispatchDown(Stroke(K.A + 16, 16, 9, 10))
+        engine.reset(11)
+        assertFalse(engine.dispatchUp(Stroke(K.A + 16, 16, 9, 12)).handled)
+    }
+
+    @Test fun textSequenceAndNativeActionsRetainOwnershipWithoutReleaseEffects() {
+        val overrides = LegacyOverrides.parse("""{"mappings":{"M1":{
+            "KEYCODE_Q":{"type":"TEXT","text":"owned"},
+            "KEYCODE_A":{"type":"SEQUENCE","steps":[{"key":"KEYCODE_Z","modifiers":["CTRL"]}]}
+        }}}""") {
+            mapOf("KEYCODE_Q" to K.A + 16, "KEYCODE_A" to K.A, "KEYCODE_Z" to K.Z)[it]
+        }
+        val candidate = NotedEngine(data, overrides)
+
+        assertTrue(candidate.dispatchDown(Stroke(K.A + 16, 16, 1, 2)).handled)
+        assertTrue(candidate.dispatchUp(Stroke(K.A + 16, 16, 1, 3)).handled)
+        assertTrue(candidate.dispatchDown(Stroke(K.A, 30, 4, 5)).handled)
+        val sequenceUp = candidate.dispatchUp(Stroke(K.A, 30, 4, 6))
+        assertTrue(sequenceUp.handled)
+        assertTrue(sequenceUp.effects.isEmpty())
+
+        candidate.dispatchDown(Stroke(K.BACKSLASH, 86, 7, 8))
+        val nativeDown = candidate.dispatchDown(Stroke(K.A + 16, 16, 9, 10))
+        assertTrue(nativeDown.handled)
+        assertTrue(nativeDown.effects.single() is Effect.Key)
+        assertTrue(candidate.dispatchUp(Stroke(K.A + 16, 16, 9, 11)).handled)
+    }
+
     private fun toggleShiftLock(target: NotedEngine) {
         target.down(Stroke(K.SHIFT_L, 42, 1, 1))
         target.down(Stroke(K.SHIFT_R, 54, 1, 1))

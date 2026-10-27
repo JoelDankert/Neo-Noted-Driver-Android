@@ -70,4 +70,13 @@ object Meta {
     const val CTRL = 0x1000
     const val META = 0x10000
     const val NUM_LOCK = 0x200000
+    const val SHIFT_LEFT = 0x40
+    const val SHIFT_RIGHT = 0x80
+    const val ALT_LEFT = 0x10
+    const val ALT_RIGHT = 0x20
+    const val CTRL_LEFT = 0x2000
+    const val CTRL_RIGHT = 0x4000
+    const val META_LEFT = 0x20000
+    const val META_RIGHT = 0x40000
+    const val CAPS_LOCK = 0x100000
 }

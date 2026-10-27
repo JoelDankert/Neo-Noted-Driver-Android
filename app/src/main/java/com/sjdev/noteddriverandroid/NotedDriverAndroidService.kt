@@ -10,6 +10,7 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputConnection
 import com.sjdev.noteddriverandroid.core.Effect
+import com.sjdev.noteddriverandroid.core.InputSession
 import com.sjdev.noteddriverandroid.core.NotedData
 import com.sjdev.noteddriverandroid.core.NotedEngine
 import com.sjdev.noteddriverandroid.core.Stroke
@@ -19,50 +20,46 @@ import java.io.File
 /** Hardware-only adapter. Layout, compose, and held-key behavior live in the testable core. */
 class NotedDriverAndroidService : InputMethodService() {
     private lateinit var engine: NotedEngine
-    private var connection: InputConnection? = null
+    private lateinit var session: InputSession<InputConnection>
 
     override fun onCreate() {
         super.onCreate()
         val data = assets.open("noted_data.json").bufferedReader(Charsets.UTF_8).use { it.readText() }
         engine = NotedEngine(NotedData.parse(data), loadLegacyOverrides())
+        session = InputSession(engine, ::apply)
     }
 
     override fun onCreateInputView(): View? = null
 
     override fun onStartInput(attribute: EditorInfo?, restarting: Boolean) {
-        releaseAndReset(connection)
+        session.finish(SystemClock.uptimeMillis())
         super.onStartInput(attribute, restarting)
-        connection = currentInputConnection
+        session.start(currentInputConnection, SystemClock.uptimeMillis())
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
-        val target = currentInputConnection ?: return super.onKeyDown(keyCode, event)
-        connection = target
-        apply(target, engine.down(event.toStroke()))
-        return true
+        return if (session.down(currentInputConnection, event.toStroke())) true
+        else super.onKeyDown(keyCode, event)
     }
 
     override fun onKeyUp(keyCode: Int, event: KeyEvent): Boolean {
-        val target = currentInputConnection ?: connection ?: return super.onKeyUp(keyCode, event)
-        apply(target, engine.up(event.toStroke()))
-        return true
+        return if (session.up(currentInputConnection, event.toStroke())) true
+        else super.onKeyUp(keyCode, event)
     }
 
     override fun onFinishInput() {
-        releaseAndReset(connection ?: currentInputConnection)
-        connection = null
+        if (::session.isInitialized) session.finish(SystemClock.uptimeMillis())
         super.onFinishInput()
     }
 
     override fun onDestroy() {
-        releaseAndReset(connection ?: currentInputConnection)
-        connection = null
+        if (::session.isInitialized) session.finish(SystemClock.uptimeMillis())
         super.onDestroy()
     }
 
-    private fun releaseAndReset(target: InputConnection?) {
-        val effects = engine.reset(SystemClock.uptimeMillis())
-        if (target != null) apply(target, effects)
+    override fun onUnbindInput() {
+        if (::session.isInitialized) session.finish(SystemClock.uptimeMillis())
+        super.onUnbindInput()
     }
 
     private fun apply(target: InputConnection, effects: List<Effect>) {
@@ -80,7 +77,10 @@ class NotedDriverAndroidService : InputMethodService() {
         }
     }
 
-    private fun KeyEvent.toStroke() = Stroke(keyCode, scanCode, downTime, eventTime, repeatCount, deviceId, flags)
+    private fun KeyEvent.toStroke() = Stroke(
+        keyCode, scanCode, downTime, eventTime, repeatCount, deviceId, flags,
+        metaState = metaState, metaStateReliable = true,
+    )
 
     private fun loadLegacyOverrides(): LegacyOverrides {
         @Suppress("DEPRECATION")

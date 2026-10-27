@@ -80,6 +80,26 @@ the original signing key, a newly built canonical APK cannot update that old
 installation in place. Do not uninstall the working driver just to bypass this
 check; use the side-by-side preview instead. No signing key belongs in Git.
 
+## Focus changes and event ownership
+
+Version 1.1.1 reconciles reliable Android modifier metadata on each input event,
+so physically held Ctrl, Shift, Meta, and left Alt remain effective after an
+editor restart without replaying old key presses. Side-specific right Alt is
+Noted Mod4 rather than ordinary Alt. Metadata is event-local; independent
+physical presses are owned per input device, and zero metadata cannot clear
+another observed held key. Caps/Num/Scroll lock toggle bits are not physical
+Mod3 presses. Compose buffers and internal layer locks still reset on focus
+changes. If a physically held Mod3 key spans that change, Android provides no
+reliable held-key state in those toggle bits; release and press that Mod3 key
+again. No privileged input-state query is used.
+
+The Android adapter consumes a release only for a press it owns. Releases whose
+downs were delegated while no input connection existed go back to Android's
+normal handling. A small tested input-session boundary balances synthetic keys
+against the previous connection on replacement or loss, never the new editor.
+Tests exercise this routing with in-memory editor targets; actual Android OS
+lifecycle and physical keyboard behavior still need an on-device check.
+
 ## Verification boundary
 
 The pure Kotlin tests cover the pinned data, all 32 modifier/lock states,
